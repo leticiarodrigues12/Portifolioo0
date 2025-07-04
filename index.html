@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio | Letícia Rodrigues</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Animação estilo Netflix -->
+  <div id="intro-animation" class="intro-animation">
+    <span class="logo-animation">Letflix</span>
+  </div>
+
+  <!-- Navegação tipo Netflix -->
+  <header class="header">
+    <h1 class="logo-texto">
+      Letícia Rodrigues <i class='bx bx-pencil'></i>
+    </h1>
+    <nav class="nav-bar">
+      <a href="#home">Home</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#contato">Contatos</a>
+    </nav>
+  </header>
+
+  <main id="home" class="conteudo">
+    <h2 class="pergunta">oque você quer ver?</h2>
+    <section class="cards">
+      <a href="#projetos" class="card"><p><em>projetos</em></p></a>
+      <a href="#sobre" class="card"><p>sobre mim</p></a>
+      <a href="#contato" class="card"><p>contatos</p></a>
+    </section>
+
+    <div class="card-add">
+      <div class="plus">+</div>
+      <p>adicionar perfil</p>
+    </div>
+  </main>
+
+  <!-- Seções para rolagem -->
+  <section id="projetos" style="height: 100vh;"></section>
+  <section id="sobre" style="height: 100vh;"></section>
+  <section id="contato" style="height: 100vh;"></section>
+
+  <script>
+    window.addEventListener("load", () => {
+      const intro = document.getElementById('intro-animation');
+      setTimeout(() => {
+        intro.style.opacity = '0';
+        intro.style.pointerEvents = 'none';
+      }, 2500);
+    });
+  </script>
+
+</body>
+</html>
